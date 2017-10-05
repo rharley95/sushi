@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import logo from '../logo.svg';
 import '../App.css';
 import Header from './Header';
@@ -26,7 +27,6 @@ class App extends Component {
   `;
 
       
-
     return (
       <div className="App">
         <Title> This Banner component was created through styled-components! </Title>
