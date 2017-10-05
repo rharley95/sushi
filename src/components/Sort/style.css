@@ -1,6 +1,8 @@
-.test {
+.white-wrapper {
     width: 100%;
     min-height: 50px;
     border-bottom: 1px solid #e5e5e5;
     background: rgba(255,255,255,0.6);
+    line-height: 50px;
+    text-align: center;
 }

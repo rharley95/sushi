@@ -5,39 +5,37 @@ import Header from './Header';
 import Sort from './Sort';
 import Basket from './Basket';
 import Footer from './Footer';
-import Content from './Content';
 import ImageBox from './ImageBox';
 import Button from './Button';
-import Banner from './Banner';
 import styled from 'styled-components';
 
 
 
 class App extends Component {
-  
-  render() {
-    const Button = styled.button`
-    /* Adapt the colours based on primary prop */
     
-    color: palevioletred;
-    width: 300px;
-    height: 50px;
-    font-size: 1em;
-    margin: 1em;
-    padding: 0.25em 1em;
-    border: 2px solid palevioletred;
-    border-radius: 3px;
-    margin: 0 auto;
-    `;
-  
+  render() {
+    const Title = styled.h1`
+    background-color: #000;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `;
+
+      
+
     return (
       <div className="App">
-        <Banner />
+        <Title> This Banner component was created through styled-components! </Title>
         <Header />
         <Sort />
         <Basket />
         <Button />
         <Footer />
+        
       </div>
     );
   }

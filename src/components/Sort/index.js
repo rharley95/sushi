@@ -1,18 +1,27 @@
 import React from 'react';
 import './style.css';
-
+import styled from 'styled-components';
 //This is a Stateless Component, this means that this component
-//--does not pass anything, but st HTML
-//this.props."className of whatever" will fetch data from the 
-//Components tag. for Ex: in App.js inside <Header />
+//--does not pass anything, but static HTML
 
-//Since this is a Stateless Component we don't need to use "this" since we can
-//Fetch that data in the const of Header
 
 const Sort = (props) => {
+
+    const Text = styled.a `
+    text-decoration: none;
+    color: #999;
+    font-size: 20px;
+    `;
+
+    const SubText = Text.extend`
+    font-size: 10px;
+    margin-left: 20px;
+    `;
+
     return(
-        <div className="test">
-         
+        <div className="white-wrapper">
+         <Text>Following</Text>
+         <SubText>Suggestions</SubText>
         </div>
     )
 }

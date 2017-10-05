@@ -1,24 +1,35 @@
 import React from 'react';
 import './style.css';
 import dribbble from '../../dribbble-logo.png';
-import Search from '../Search/';
+import styled from 'styled-components';
 
-//This is a Stateless Component, this means that this component
-//--does not pass anything, but st HTML
-//this.props."className of whatever" will fetch data from the 
-//Components tag. for Ex: in App.js inside <Header />
-
-//Since this is a Stateless Component we don't need to use "this" since we can
-//Fetch that data in the const of Header
-
-const divStyle = {
-    backgroundColor: '#000000'
-}
+//This is a Stateless Component
 
 const Header = (props) => {
+
+    const List = styled.ul`
+    display: flex;
+    list-style: none;
+`;
+    const Item = styled.li`
+    text-decoration: none;
+    font-size: 15px;
+    color: #999;
+    margin-left: 20px;
+    `;
+
     return(
         <header className="dribbble">
          <img src={dribbble} />
+         <List>
+            <Item>Shots</Item>
+            <Item>Designers</Item>
+            <Item>Blog</Item>
+            <Item>Podcast</Item>
+            <Item>Meetups</Item>
+            <Item>Jobs</Item>
+            <Item>Hiring</Item>
+         </List>
         </header>
     )
 }

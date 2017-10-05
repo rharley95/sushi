@@ -3,14 +3,9 @@ import './style.css';
 import dribbbleBig from '../../dribbble-logo-big.png';
 import styled from 'styled-components';
 
-
 //This is a Stateless Component, this means that this component
-//--does not pass anything, but st HTML
-//this.props."className of whatever" will fetch data from the 
-//Components tag. for Ex: in App.js inside <Header />
+//--does not pass anything, but static HTML
 
-//Since this is a Stateless Component we don't need to use "this" since we can
-//Fetch that data in the const of Header
 
 const Footer = (props) => {
     return(
