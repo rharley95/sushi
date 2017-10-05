@@ -1,6 +1,8 @@
 import React from 'react';
-import './style.css';
+import ReactDOM from 'react-dom';
 import styled from 'styled-components';
+import './style.css';
+
 //This is a Stateless Component, this means that this component
 //--does not pass anything, but static HTML
 
