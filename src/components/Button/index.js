@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import './style.css';
+import ReactDOM from 'react-dom';
 import styled from 'styled-components';
+import './style.css';
+
 
 class Button extends Component {
 

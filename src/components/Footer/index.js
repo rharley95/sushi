@@ -1,7 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import styled from 'styled-components';
 import './style.css';
 import dribbbleBig from '../../dribbble-logo-big.png';
-import styled from 'styled-components';
+
 
 //This is a Stateless Component, this means that this component
 //--does not pass anything, but static HTML

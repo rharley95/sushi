@@ -1,7 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import styled from 'styled-components';
 import './style.css';
 import dribbble from '../../dribbble-logo.png';
-import styled from 'styled-components';
+
 
 //This is a Stateless Component
 
